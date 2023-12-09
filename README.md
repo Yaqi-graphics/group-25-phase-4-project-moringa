@@ -20,6 +20,10 @@ The diagnoses for the images were then graded by two expert physicians, and chec
 
 
 
+![ALT TEXT](https://github.com/Yaqi-graphics/group-25-phase-4-project-moringa/blob/Mourine/Image%205.PNG)
+
+
+
 
 
 
