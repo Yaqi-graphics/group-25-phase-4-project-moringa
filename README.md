@@ -60,10 +60,23 @@ history = model.fit(X_train_aug,
                        class_weight= weights,
                        validation_data=(X_val, y_val))
 
-##Visualizing the results for y_test.
+##Visualizing the results for class-imbalance training data.
+![ALT TEXT](https://github.com/Yaqi-graphics/group-25-phase-4-project-moringa/blob/Mourine/Image%203.PNG)
+
+
+
+
+
+
+
+
+
+
+This shows that the model performs better in the majority class and poor in the minority class which might not be the case with the x-rays which can have mis-leading evaluation metrics.
+
+
+
 ![ALT TEXT]()
-
-
 
 
 
