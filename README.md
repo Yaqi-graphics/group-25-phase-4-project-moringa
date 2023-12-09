@@ -37,7 +37,7 @@ The diagnoses for the images were then graded by two expert physicians, and chec
 
  Pooling Layers they subsample the input image inorder to reduce computational load, memory usage, and number of parameters.
 
- #Model construction.
+ ## Model construction.
  for our modelling,Image Augmentation Using PNet was used which consisted of only five convolution blocks, each followed by a max‐pooling layer. Even though PNet has a smaller number of parameters, it outperforms both the AlexNet and VGG 16 in the pneumonia detection
 
  We can load the data using Pnet model that has been pertrained on imagenet as follows:
@@ -61,7 +61,7 @@ history = model.fit(X_train_aug,
                        validation_data=(X_val, y_val))
 
 ##Visualizing the results for y_test.
-
+![ALT TEXT]()
 
 
 
