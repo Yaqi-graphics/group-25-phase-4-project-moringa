@@ -17,15 +17,14 @@ The diagnoses for the images were then graded by two expert physicians, and chec
 
  ## Data Preview
 
-
-
-
 ![ALT TEXT](https://github.com/Yaqi-graphics/group-25-phase-4-project-moringa/blob/Mourine/Image%205.PNG)
 
 
 
 
 
+
+![ALT TEXT](https://github.com/Yaqi-graphics/group-25-phase-4-project-moringa/blob/Mourine/Image%202.PNG)
 
 
 
