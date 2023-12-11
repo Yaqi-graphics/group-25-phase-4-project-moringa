@@ -110,7 +110,7 @@ base_model = DenseNet121(input_shape=(224, 224, 3),
                          pooling='avg'
 ## Model evaluation
 Although all 4 models have very high overall accuracy, cnn_4 has higher Accuracy, Recall and Precision across the board,where models did not perform better than the 5th iteration (without Transfer Learning). With more fine-tuning and unfreezing certain layers. However, the 7th iteration had a much more balanced confusion matrix (more even False Positive and False Negatives) than past iterations.
-![ALT TEXT](https://github.com/Yaqi-graphics/group-25-phase-4-project-moringa/blob/Mourine/Capture%2011.PNG)
+![ALT TEXT](https://github.com/Yaqi-graphics/group-25-phase-4-project-moringa/blob/Mourine/Capture%2012.PNG)
 
 
 ![ALT TEXT](https://github.com/Yaqi-graphics/group-25-phase-4-project-moringa/blob/Mourine/Capture%2013.PNG)
