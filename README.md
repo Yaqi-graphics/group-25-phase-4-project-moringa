@@ -76,7 +76,8 @@ This shows that the model performs better in the majority class and poor in the 
 
 
 
-![ALT TEXT]()
+![ALT TEXT](https://github.com/Yaqi-graphics/group-25-phase-4-project-moringa/blob/Mourine/Image%204.PNG)
+
 
 
 
