@@ -4,8 +4,11 @@ Pneumonia Detection Using Convolutional Neural Network
 
 
 
-![ALT TEXT]()
+![ALT TEXT](https://github.com/Yaqi-graphics/group-25-phase-4-project-moringa/blob/Mourine/Capture%208.PNG)
 
+
+
+![ALT TEXT]()
 
 ## Overview
 Pneumonia is an inflammatory condition of the lung primariy affecting the small air sacs known as alveoli in one or both lungs. It can be caused by infection with viruses or bacteria; and identifying the pathogen responsible for Pneumonia could be highly challenging.
