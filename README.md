@@ -125,4 +125,11 @@ Based on our cm numbers,our PNet with image augmentation and weights was our bes
 Rather than purely pursuing better metric scores, it'd be best to take advantage of experts' domain knowledge, and have these outputs reviewed by clinicians and radiologists who can provide input on whether or not the model has identified correct/potential regions the chest area that might be indicators of Pneumonia.
 
 ## Recommendation
+Use this model as a tool for efficiency. Implementing this model in a radiology setting as way to assist x-ray technicians in detecting pneumonia would be the best way to use this technology. For example, once the chest x-ray is taken, it can automatically give its prediction to the tech. The tech and/or doctor would then need less time to review the model's prediction and use their trained eye for a final diagnosis. This would speed up the efficiency of the entire department so that the doctors' and techs' time can be mostly spent on other tasks.
+
+The model will likely work better if the x-ray technician crops out the diaphragm before feeding the image to the model to remove noise.
+
+Also a recommendation to the x-ray tech to save the image as 224 x 224 px before feeing the image into the model.
+
+## Next step
 In order to employ our model at scale with confidence, we'd want to improve our models detection of pneumonia by incorporating Object Detection/Localization into the models so that the output would not only be whether or not the X-ray exhibit abnormal pulmonary patterns typically observed in Pneumonia, but also the location of the identified patterns.
