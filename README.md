@@ -68,37 +68,49 @@ This shows that the model performs better in the majority class and poor in the 
 
 ## Model evaluation.
 the 7th iteration had a much more balanced confusion matrix (more even False Positive and False Negatives) than past iterations.
-![ALT TEXT]()
+![ALT TEXT](https://github.com/Yaqi-graphics/group-25-phase-4-project-moringa/blob/Mourine/Capture%2011.PNG)
+# Comparion of the metrics.
+mod6 = models.Sequential()
+mod6.add(cnn_base)
+mod6.add(Flatten())
+mod6.add(Dense(128, activation='relu'))
+mod6.add(Dense(1, activation='sigmoid'))
 
+results = mod6.fit(X_train,
+                   y_train,
+                   epochs=50,
+                   batch_size=32,
+                   validation_split=.2,
+                   class_weight=weights_dict,
+                   callbacks=[early_stop])
 
+ mod7 = models.Sequential()
+cnn_base2 = VGG19(weights='imagenet', include_top = True)
+cnn_base2.trainable = False
+mod7.add(cnn_base2)
+mod7.add(Flatten())
+mod7.add(Dense(64, activation='relu'))
+mod7.add(Dense(1, activation='sigmoid'))
+mod7.compile(optimizer='RMSprop',
+             loss='binary_crossentropy',
+             metrics=['acc'])
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-##Transfer Learning
+results = mod7.fit(X_train,
+                   y_train,
+                   epochs=50,
+                   batch_size=32,
+                   validation_split=.2,
+                   class_weight=weights_dict,
+                   callbacks=[early_stop])
+Model 7 is an improved way where we added optimizer and binary_crossentropy for the loss and thats why it performed better as compared to the other 6 ways performed.               
+## Transfer Learning
 Using DenseNet as our base, we'll try using our CNN on top of a pretrained model to see if we get better results and this was used to achieve the intended results:
 base_model = DenseNet121(input_shape=(224, 224, 3),
                          include_top=False,
                          pooling='avg'
 ## Model evaluation
-Although all 4 models have very high overall accuracy, cnn_4 has higher Accuracy, Recall and Precision across the board.
+Although all 4 models have very high overall accuracy, cnn_4 has higher Accuracy, Recall and Precision across the board,where models did not perform better than the 5th iteration (without Transfer Learning). With more fine-tuning and unfreezing certain layers. However, the 7th iteration had a much more balanced confusion matrix (more even False Positive and False Negatives) than past iterations.
+![ALT TEXT]()
 
 
 
