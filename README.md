@@ -22,14 +22,11 @@ The diagnoses for the images were then graded by two expert physicians, and chec
 ![ALT TEXT](https://github.com/Yaqi-graphics/group-25-phase-4-project-moringa/blob/Mourine/Image%205.PNG)
 
 
-
-
-
-
 ![ALT TEXT](https://github.com/Yaqi-graphics/group-25-phase-4-project-moringa/blob/Mourine/Image%202.PNG)
 
 
-
+## Data frames.
+The dataframe has 3 class composition where 5216 images belongs to training data,624 images belongs to test data and 16 images belongs to val.
 
 
  ## Modeling
@@ -65,20 +62,14 @@ history = model.fit(X_train_aug,
 ##Visualizing the results for class-imbalance training data.
 ![ALT TEXT](https://github.com/Yaqi-graphics/group-25-phase-4-project-moringa/blob/Mourine/Image%203.PNG)
 
-
-
-
-
-
-
-
-
-
 This shows that the model performs better in the majority class and poor in the minority class which might not be the case with the x-rays which can have mis-leading evaluation metrics.
 
-
-
 ![ALT TEXT](https://github.com/Yaqi-graphics/group-25-phase-4-project-moringa/blob/Mourine/Image%204.PNG)
+
+## Model evaluation.
+the 7th iteration had a much more balanced confusion matrix (more even False Positive and False Negatives) than past iterations.
+![ALT TEXT]()
+
 
 
 
